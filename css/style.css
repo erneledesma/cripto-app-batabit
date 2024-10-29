@@ -4,7 +4,7 @@
     --soft-orange: #ffe9d4;
     --secondary-blue: #1a9af7;
     --soft-blue: #e7f5ff;
-    --warn-black: #282623 ;
+    --warn-black: #282623;
     --black: #201e1c;
     --off-white: #faf8f7;
     --just-white: #ffffff;
@@ -31,11 +31,9 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(
-        208.83deg,
-        var(--black) 16.69%,
-        var(--bitcoin-orange) 100%
-    );
+    background: linear-gradient(208.83deg,
+            var(--black) 16.69%,
+            var(--bitcoin-orange) 100%);
 
     header img {
         width: 151px;
@@ -59,7 +57,6 @@ header {
         font-weight: bold;
         line-height: 2.6rem;
         color: var(--just-white)
-
     }
 
     .header--title-container p {
@@ -72,7 +69,7 @@ header {
 
     .header--title-container .header--button {
         position: absolute;
-        left:  calc(50% - 118px);
+        left: calc(50% - 118px);
         top: 270px;
         display: block;
         margin-top: 35px;
@@ -91,5 +88,45 @@ header {
         color: var(--black);
     }
 
+
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bitcoin-orange);
+
+    p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: var(--just-white);
+    }
+
+    span {
+        font-family: "DM Sans", sans-serif;
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        color: var(--just-white);
+    }
+
+    .footer--socialLinks-conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer--infoBrand-conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
